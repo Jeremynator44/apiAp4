@@ -13,7 +13,7 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/employe', [EmployeController::class, "liste"]);
-Route::get('/employe/authentification', [EmployeController::class, "authentifierEmployer"]);
+Route::post('/employe/authentification', [EmployeController::class, "authentifierEmployer"]);
 
 Route::get('/plats', [PlatsController::class, "liste"]);
 Route::put('/plats/{id}', [PlatsController::class, "update"]);
